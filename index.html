@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <article class="card">
+      <div class="background">
+        <!-- <img srcset="https://picsum.photos/300/200 1x, https://picsum.photos/200/200 2x" alt="" /> -->
+
+        <!-- art direction(change the image itself) with density switching  -->
+        <!-- <picture>
+              <source srcset="https://picsum.photos/200/300 1x" media="(min-width: 600px)"></source>
+              <img srcset="https://picsum.photos/200/100 1x" alt="" />
+        </picture> -->
+
+        <!-- Resolution switching, change the size of image -->
+        <img
+          src="https://picsum.photos/100"
+          srcset="
+            https://picsum.photos/400 400w,
+            https://picsum.photos/600 600w
+          "
+          sizes="(min-width: 600px) 200px,
+          100px"
+        />
+      </div>
+      <!-- <div class="content">
+        <h2><a href="#">Awesome view</a></h2>
+        14th December 2020
+      </div>
+      <span class="tag">Nature</span> -->
+    </article>
+    <script src="src/index.js"></script>
+  </body>
+</html>
