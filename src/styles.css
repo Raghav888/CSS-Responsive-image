@@ -65,7 +65,8 @@ iframe {
 
   aspect-ratio: 2/1;
 
-  object-fit: contain | cover;
+  object-fit: contain;
+  /* cover */
 
   object-position: top center;
 }
